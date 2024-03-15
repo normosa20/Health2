@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Kingdom of Saudi Arabia - Ministry of Health Portal</title>
+<script>
+function validateForm() {
+    var x = document.forms["contact_form"]["name"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+var x2 = document.forms["contact_form"]["email"].value;
+    if (x2 == null || x2 == "") {
+        alert("email must be filled out");
+        return false;
+    }
+var x3 = document.forms["contact_form"]["message"].value;
+    if (x3 == null || x3 == "") {
+        alert("message must be filled out");
+        return false;
+    }
+return true;
+}
+</script>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0">
+  <tr>
+    <td  ><img src="jleft.jpg"/></td>
+    <td align="top" ><table cellspacing="0" cellpadding="0"><tr><td><img src="jr.jpg"/></td></tr><tr><td height="86px">
+<marquee width="80%"><h2>MARWA EBRAHIM <img src="ICON.PNG" height="35px"/> 
+NORA MHRAG <img src="ICON.PNG" height="35px"/>
+HANA EBRAHIM</h2></marquee>
+</td></tr></table></td>
+  </tr>
+  <tr>
+    <td style=" vertical-align:top" >
+<table cellspacing="0" cellpadding="0"><tr><td width="250px"><img src="lll.gif" height="160px"/></td><td style=" vertical-align:top">
+<form name="login">
+Username<input type="text" name="userid" placeholder="Username"/>
+Password<input type="password" name="pswrd" placeholder="password"/>
+<input type="submit" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<a href="Registration.html">Registration</a>
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "123456" && form.pswrd.value == "1234567")
+  {
+    window.open('home.html')
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+</td></tr></table>
+
+</td><td style=" vertical-align:top" >
+<p  style="  width: 80%;"> <img src="logo.jpg" height="120px"/>
+</td><td style=" vertical-align:top">
+ 
+</td></tr>
+  
+</table>
+
+<hr/>
+<table width="100%" > <tr bgcolor="#ECF6CE"> <td bgcolor="#ECF6CE" width="100px"><h3><a href="index.html">Home</a></h3></td>
+ <td bgcolor="#ECF6CE" width="160px"><h3><a href="page2.html">Electronic Service</a></h3></td>
+ <td bgcolor="#ECF6CE" width="160px"><h3><a href="page3.html">Health Awareness</a></h3></td>
+ <td bgcolor="#ECF6CE" width="160px"><h3><a href="page4.html">Heath Tools</a></h3></td>
+<td bgcolor="#ECF6CE" width="160px"><h3><a href="page5.html">Contact US</a></h3></td>
+<td bgcolor="#ECF6CE" width="100px"><h3><a href="page6.html">Video</a></h3></td></tr>
+</table>
+<br/>
+
+<h1>Video :</h1>
+
+<video width="700" height="500" controls>
+  <source src="video.mp4" type="video/mp4">
+  
+</video>
+ 
+<a href="javascript:history.back()">Go Back</a>

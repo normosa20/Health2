@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Kingdom of Saudi Arabia - Ministry of Health Portal</title>
+<style type="text/css">
+ 
+            body {font-family:Arial, Sans-Serif;}
+ 
+            #container {width:300px; margin:0 auto;}
+ 
+            
+            form label {display:inline-block; width:140px;}
+ 
+            
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"] {width:160px;}
+ 
+            form .line {clear:both;}
+            form .line.submit {text-align:right;}
+ 
+        </style>
+<script>
+function validateForm() {
+    var x = document.forms["contact_form"]["name"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+var x2 = document.forms["contact_form"]["email"].value;
+    if (x2 == null || x2 == "") {
+        alert("email must be filled out");
+        return false;
+    }
+var x3 = document.forms["contact_form"]["message"].value;
+    if (x3 == null || x3 == "") {
+        alert("message must be filled out");
+        return false;
+    }
+return true;
+}
+</script>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0">
+  <tr>
+    <td  ><img src="jleft.jpg"/></td>
+    <td align="top" ><table cellspacing="0" cellpadding="0"><tr><td><img src="jr.jpg"/></td></tr><tr><td height="86px">
+<marquee width="80%"><h2>MARWA EBRAHIM <img src="ICON.PNG" height="35px"/> 
+NORA MHRAG <img src="ICON.PNG" height="35px"/>
+HANA EBRAHIM</h2></marquee>
+</td></tr></table></td>
+  </tr>
+  <tr>
+    <td style=" vertical-align:top" >
+<table cellspacing="0" cellpadding="0"><tr><td width="250px"><img src="lll.gif" height="160px"/></td><td style=" vertical-align:top">
+<form name="login">
+Username<input type="text" name="userid" placeholder="Username"/>
+Password<input type="password" name="pswrd" placeholder="password"/>
+<input type="submit" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<a href="Registration.html">Registration</a>
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "123456" && form.pswrd.value == "1234567")
+  {
+    window.open('home.html')
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+</td></tr></table>
+
+</td><td style=" vertical-align:top" >
+<p  style="  width: 80%;"> <img src="logo.jpg" height="120px"/>
+</td><td style=" vertical-align:top">
+ 
+</td></tr>
+  
+</table>
+
+<hr/>
+<table width="100%" > <tr bgcolor="#ECF6CE"> <td bgcolor="#ECF6CE" width="100px"><h3><a href="index.html">Home</a></h3></td>
+ <td bgcolor="#ECF6CE" width="160px"><h3><a href="page2.html">Electronic Service</a></h3></td>
+ <td bgcolor="#ECF6CE" width="160px"><h3><a href="page3.html">Health Awareness</a></h3></td>
+ <td bgcolor="#ECF6CE" width="160px"><h3><a href="page4.html">Heath Tools</a></h3></td>
+<td bgcolor="#ECF6CE" width="160px"><h3><a href="page5.html">Contact US</a></h3></td>
+<td bgcolor="#ECF6CE" width="100px"><h3><a href="page6.html">Video</a></h3></td></tr>
+</table>
+<br/>
+
+<h1>Registration Form :</h1>
+
+  <div id="container">
+            <form>
+                
+                <div class="line"><label for="username">Username *: </label><input type="text" id="username" /></div>
+                <div class="line"><label for="pwd">Password *: </label><input type="password" id="pwd" /></div>
+                <!-- You may want to consider adding a "confirm" password box also -->
+                <div class="line"><label for="surname">Surname *: </label><input type="text" id="surname" /></div>
+                <div class="line"><label for="other_names">Other Names *: </label><input type="text" id="names" /></div>
+                <div class="line"><label for="dob">Date of Birth *: </label><input type="text" id="dob" /></div>
+                <div class="line"><label for="email">Email *: </label><input type="email" id="email" /></div>
+                <!-- Valid input types: http://www.w3schools.com/html5/html5_form_input_types.asp -->
+                <div class="line"><label for="tel">Telephone: </label><input type="text" id="tel" /></div>
+                <div class="line"><label for="add">Address *: </label><input type="text" id="add" /></div>
+                <div class="line"><label for="ptc">Post Code *: </label><input type="text" id="ptc" /></div>
+                <div class="line submit"><input type="submit" value="Submit" /></div>
+ 
+                
+            </form>
+        </div>
+ 
+<a href="javascript:history.back()">Go Back</a>
